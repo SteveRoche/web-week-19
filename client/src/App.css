@@ -1,0 +1,145 @@
+.App {
+  box-shadow: 0 0 15px 10px #eee;
+}
+
+.NavBar {
+  box-shadow: 0 0 15px 10px #eee;
+}
+
+.NavBar > ul {
+  display: flex;
+  list-style-type: none;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.NavBar > ul > li {
+  line-height: 50px;
+}
+
+.NavBar ul > li > img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: auto;
+}
+
+.NavItem {
+  font-weight: bold;
+}
+
+.selected {
+  border-bottom: 3px solid #1ce6be;
+}
+
+.Header {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 1em;
+}
+
+.Header > i {
+  padding: 10px;
+}
+
+.Header > .fa-align-right {
+  transform: rotate(180deg);
+}
+
+.Header > .fa-user-circle {
+  color: #1ce6be;
+}
+
+.Breadcrumbs {
+  line-height: 100%;
+  vertical-align: middle;
+  transform: translateY(25%);
+  margin-left: 3em;
+  margin-right: auto;
+  font-size: 0.85em;
+}
+
+.Breadcrumbs > span:first-child {
+  font-weight: 300;
+}
+
+.Breadcrumbs > span:nth-child(2) {
+  color: #1ce6be;
+}
+
+.Breadcrumbs > span:last-child {
+  font-weight: bold;
+}
+
+.AcademicsView {
+  display: grid;
+  grid-template: min-content 1fr / 10em 1fr 1fr;
+  grid-template-areas:
+    'sidebar table1 table2'
+    'sidebar text text';
+  padding-bottom: 2em;
+}
+
+.SideBar {
+  grid-area: sidebar;
+}
+
+.SideBar > span {
+  font-size: 3em;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+
+  margin-top: 25vh;
+  margin-left: 0.25em;
+  user-select: none;
+}
+
+.SideBar > span > span {
+  color: #1ce6be;
+}
+
+.Table:first-child {
+  grid-area: table1;
+  border-right: 4px solid black;
+}
+
+.Table:last-child {
+  grid-area: table2;
+  border-left: 4px solid #1ce6be;
+}
+
+.Table td {
+  padding: 0.5em;
+}
+
+.Table td:first-child {
+  font-weight: bold;
+}
+
+.ShadowText {
+  grid-area: text;
+
+  font-size: 25vh;
+  font-weight: 700;
+
+  background-color: #ccc;
+  color: transparent;
+  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.7);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  user-select: none;
+}
+
+.ShadowText > span {
+  background-color: rgba(28, 230, 190, 0.4);
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.7);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
