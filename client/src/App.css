@@ -1,4 +1,12 @@
-
+#ic{
+  z-index: -15;
+  opacity: 0.06;
+  padding:0;
+  margin:0;
+  bottom:-10px;
+  right:0px;
+  position: absolute;
+}
 .nav-bg{
   height:80px;
   padding:0 0 0 30px;
@@ -28,7 +36,7 @@
 }
 .selected{
   color:#000;
-  border-bottom: 2.5px solid #19e8be;
+  border-bottom: 2.5px solid #FF6600;
   
 }
 
@@ -67,7 +75,7 @@
 .Header > .fa-user-circle {
   margin-top:-7px;
   font-size:2em;
-  color: #1ce6be;
+  color: #FF6600;
 }
 
 .Breadcrumbs {
@@ -79,7 +87,7 @@
 }
 
 .Breadcrumbs > span:nth-child(2) {
-  color: #1ce6be;
+  color: #FF6600;
 }
 
 .Breadcrumbs > span:last-child {
@@ -87,6 +95,7 @@
 }
 
 .AcademicsView {
+
   padding-bottom:50px;
   display:flex;
 }
@@ -105,7 +114,7 @@
 }
 
 .SideBar > span > span {
-  color: #1ce6be;
+  color: #FF6600;
 }
 
 
@@ -118,7 +127,7 @@
 
 .table1{
   width:25%;
-  border-right:4px solid #1ce6be;
+  border-right:4px solid #FF6600;
   margin-right:75px;
 }
 .Table td {
@@ -151,10 +160,11 @@
   -moz-background-clip: text;
   background-clip: text;
   user-select: none;
+
 }
 
 .ShadowText > span {
-  background-color: rgba(28, 230, 190, 0.8);
+  background-color: rgba(255, 102, 0, 0.8);
   color: transparent;
   text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.7);
   -webkit-background-clip: text;

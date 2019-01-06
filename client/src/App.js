@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 var Logo = require('./logo.png');
+var ic = require('./ic.png');
 
 var data1 = {
   'Roll No.': 32,
@@ -24,6 +25,7 @@ const App = () => (
   <div className="App">
     <NavBar />
     <Content />
+    <img src={ic} alt="" id="ic"/>
   </div>
 );
 
