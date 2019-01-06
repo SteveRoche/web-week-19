@@ -1,42 +1,45 @@
-.App {
-  box-shadow: 0 0 15px 10px #eee;
+
+.nav-bg{
+  height:80px;
+  padding:0 0 0 30px;
+  line-height: 80px;
+  width:100%;
+  background:#fff;
+  filter: drop-shadow(0px 13px 10px #f0f0f0);
 }
 
-.NavBar {
-  box-shadow: 0 0 15px 10px #eee;
+.logo{
+  margin-right:90px;
+  vertical-align: middle;
+  height:55%;
 }
 
-.NavBar > ul {
-  display: flex;
-  list-style-type: none;
-  align-content: center;
-  justify-content: space-around;
+.NavItem{
+  padding:3px;
+  color: #565656;
+  font-size:0.78em;
+  margin:20px;
+  font-weight:700;
+  transition:0.5s;
 }
-
-.NavBar > ul > li {
-  line-height: 50px;
+.NavItem:hover{
+  color: #000;
+  cursor:pointer;
 }
-
-.NavBar ul > li > img {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 40px;
-  width: auto;
-}
-
-.NavItem {
-  font-weight: bold;
-}
-
-.selected {
-  border-bottom: 3px solid #1ce6be;
+.selected{
+  color:#000;
+  border-bottom: 2.5px solid #19e8be;
+  
 }
 
 .Header {
+  margin-top:10px;
+  z-index:5;
+  height:70px;
+  line-height: 70px;
   display: flex;
   flex-wrap: nowrap;
-  padding: 1em;
+  padding: 0.8em;
 }
 
 .Header > i {
@@ -44,20 +47,35 @@
 }
 
 .Header > .fa-align-right {
+  font-size:1.3em;
   transform: rotate(180deg);
+  transition:0.3s;
+}
+.Header > .fa-align-right:hover {
+  cursor:pointer;
+  font-size:1.5em;
+}
+
+.Header > .fa-th,.Header > .fa-user-circle:hover{
+  cursor:pointer;
+}
+
+.Header > .fa-th {
+  font-size:1.3em;
 }
 
 .Header > .fa-user-circle {
+  margin-top:-7px;
+  font-size:2em;
   color: #1ce6be;
 }
 
 .Breadcrumbs {
-  line-height: 100%;
-  vertical-align: middle;
+  line-height: 30px;
   transform: translateY(25%);
-  margin-left: 3em;
+  margin-left: 10em;
   margin-right: auto;
-  font-size: 0.85em;
+  font-size: 0.75em;
 }
 
 .Breadcrumbs > span:first-child {
@@ -73,26 +91,18 @@
 }
 
 .AcademicsView {
-  display: grid;
-  grid-template: min-content 1fr / 10em 1fr 1fr;
-  grid-template-areas:
-    'sidebar table1 table2'
-    'sidebar text text';
-  padding-bottom: 2em;
+  padding-bottom:50px;
+  display:flex;
 }
 
-.SideBar {
-  grid-area: sidebar;
-}
+
 
 .SideBar > span {
   font-size: 3em;
   font-weight: 700;
-
   text-transform: uppercase;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-
   margin-top: 25vh;
   margin-left: 0.25em;
   user-select: none;
@@ -102,33 +112,45 @@
   color: #1ce6be;
 }
 
-.Table:first-child {
-  grid-area: table1;
-  border-right: 4px solid black;
+
+.Table{
+  font-size:0.8em;
+  margin-left:50px;
+  margin-top:50px;
+
 }
 
-.Table:last-child {
-  grid-area: table2;
-  border-left: 4px solid #1ce6be;
+.table1{
+  width:25%;
+  border-right:4px solid #1ce6be;
+  margin-right:75px;
 }
-
 .Table td {
-  padding: 0.5em;
+  padding-bottom: 0.9em;
+  padding-top: 0.9em;
+}
+.table2{
+  width:25%;
+
+
 }
 
-.Table td:first-child {
-  font-weight: bold;
+#val1 {
+  width:130px;
+  font-weight:700;
 }
 
 .ShadowText {
-  grid-area: text;
-
+  position:absolute;
+  bottom:5px;
+  z-index:-10;
+  left:200px;
   font-size: 25vh;
   font-weight: 700;
 
   background-color: #ccc;
   color: transparent;
-  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.7);
+  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.8);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -136,7 +158,7 @@
 }
 
 .ShadowText > span {
-  background-color: rgba(28, 230, 190, 0.4);
+  background-color: rgba(28, 230, 190, 0.8);
   color: transparent;
   text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.7);
   -webkit-background-clip: text;
