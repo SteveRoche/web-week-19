@@ -78,16 +78,12 @@
   font-size: 0.75em;
 }
 
-.Breadcrumbs > span:first-child {
-  font-weight: 300;
-}
-
 .Breadcrumbs > span:nth-child(2) {
   color: #1ce6be;
 }
 
 .Breadcrumbs > span:last-child {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .AcademicsView {
