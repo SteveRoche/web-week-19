@@ -28,16 +28,20 @@
   font-size:0.78em;
   margin:20px;
   font-weight:700;
-  transition:0.5s;
+  transition:0.2s;
 }
 .NavItem:hover{
   color: #000;
+  font-size:0.88em;
   cursor:pointer;
 }
 .selected{
   color:#000;
   border-bottom: 2.5px solid #FF6600;
-  
+}
+.selected:hover{
+  font-size:0.78em;
+
 }
 
 .Header {
