@@ -1,53 +1,56 @@
-#ic{
+#ic {
   z-index: -15;
   opacity: 0.06;
-  padding:0;
-  margin:0;
-  bottom:-10px;
-  right:0px;
+  padding: 0;
+  margin: 0;
+  bottom: -10px;
+  right: 0px;
   position: absolute;
 }
-.nav-bg{
-  height:80px;
-  padding:0 0 0 30px;
+
+.nav-bg {
+  height: 80px;
+  padding: 0 0 0 30px;
   line-height: 80px;
-  width:100%;
-  background:#fff;
+  width: 100%;
+  background: #fff;
   filter: drop-shadow(0px 13px 10px #f0f0f0);
 }
 
-.logo{
-  margin-right:90px;
+.logo {
+  margin-right: 90px;
   vertical-align: middle;
-  height:55%;
+  height: 55%;
 }
 
-.NavItem{
-  padding:3px;
+.NavItem {
+  padding: 3px;
   color: #565656;
-  font-size:0.78em;
-  margin:20px;
-  font-weight:700;
-  transition:0.2s;
+  font-size: 0.78em;
+  margin: 20px;
+  font-weight: 700;
+  transition: 0.2s;
 }
-.NavItem:hover{
-  color: #000;
-  font-size:0.88em;
-  cursor:pointer;
-}
-.selected{
-  color:#000;
-  border-bottom: 2.5px solid #FF6600;
-}
-.selected:hover{
-  font-size:0.78em;
 
+.NavItem:hover {
+  color: #000;
+  font-size: 0.88em;
+  cursor: pointer;
+}
+
+.selected {
+  color: #000;
+  border-bottom: 2.5px solid #ff6600;
+}
+
+.selected:hover {
+  font-size: 0.78em;
 }
 
 .Header {
-  margin-top:10px;
-  z-index:5;
-  height:70px;
+  margin-top: 10px;
+  z-index: 5;
+  height: 70px;
   line-height: 70px;
   display: flex;
   flex-wrap: nowrap;
@@ -59,27 +62,28 @@
 }
 
 .Header > .fa-align-right {
-  font-size:1.3em;
+  font-size: 1.3em;
   transform: rotate(180deg);
-  transition:0.3s;
+  transition: 0.3s;
 }
 .Header > .fa-align-right:hover {
-  cursor:pointer;
-  font-size:1.5em;
+  cursor: pointer;
+  font-size: 1.5em;
 }
 
-.Header > .fa-th,.Header > .fa-user-circle:hover{
-  cursor:pointer;
+.Header > .fa-th,
+.Header > .fa-user-circle:hover {
+  cursor: pointer;
 }
 
 .Header > .fa-th {
-  font-size:1.3em;
+  font-size: 1.3em;
 }
 
 .Header > .fa-user-circle {
-  margin-top:-7px;
-  font-size:2em;
-  color: #FF6600;
+  margin-top: -7px;
+  font-size: 2em;
+  color: #ff6600;
 }
 
 .Breadcrumbs {
@@ -91,20 +95,41 @@
 }
 
 .Breadcrumbs > span:nth-child(2) {
-  color: #FF6600;
+  color: #ff6600;
 }
 
 .Breadcrumbs > span:last-child {
   font-weight: 500;
 }
 
-.AcademicsView {
-
-  padding-bottom:50px;
-  display:flex;
+.Searchbar {
+  line-height: 30px;
+  transform: translateY(25%);
+  margin-left: 10em;
+  margin-right: auto;
+  font-size: 0.75em;
 }
 
+.Searchbar > input {
+  outline: none;
+  padding: 0.5em;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ff6600;
+  border-right: none;
+}
 
+.Searchbar > button {
+  padding: 0.5em;
+  font-variant: small-caps;
+  background-color: rgba(255, 102, 0, 0.2);
+  border: 1px solid #ff6600;
+  border-radius: 0 5px 5px 0;
+}
+
+.AcademicsView {
+  padding-bottom: 50px;
+  display: flex;
+}
 
 .SideBar > span {
   font-size: 3em;
@@ -118,42 +143,40 @@
 }
 
 .SideBar > span > span {
-  color: #FF6600;
+  color: #ff6600;
 }
 
-
-.Table{
-  font-size:0.8em;
-  margin-left:50px;
-  margin-top:50px;
-
+.Table {
+  font-size: 0.8em;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
-.table1{
-  width:25%;
-  border-right:4px solid #FF6600;
-  margin-right:75px;
+.table1 {
+  width: 25%;
+  border-right: 4px solid #ff6600;
+  margin-right: 75px;
 }
+
 .Table td {
   padding-bottom: 0.9em;
   padding-top: 0.9em;
 }
-.table2{
-  width:25%;
 
-
+.table2 {
+  width: 25%;
 }
 
 #val1 {
-  width:130px;
-  font-weight:700;
+  width: 130px;
+  font-weight: 700;
 }
 
 .ShadowText {
-  position:absolute;
-  bottom:5px;
-  z-index:-10;
-  left:200px;
+  position: absolute;
+  bottom: 5px;
+  z-index: -10;
+  left: 200px;
   font-size: 25vh;
   font-weight: 700;
 
@@ -164,7 +187,6 @@
   -moz-background-clip: text;
   background-clip: text;
   user-select: none;
-
 }
 
 .ShadowText > span {

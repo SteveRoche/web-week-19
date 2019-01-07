@@ -5,6 +5,8 @@ const mysql = require("mysql");
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 
+const PORT = 3001;
+
 var connection = mysql.createConnection({
 	host: "localhost",
 	user: "codeportaluser",
@@ -12,9 +14,9 @@ var connection = mysql.createConnection({
 	database: "web_week_2019"
 });
 
-app.listen(3000, err => {
+app.listen(PORT, err => {
 	if (err) console.log(err);
-	else console.log("Listening on port 3000!");
+	else console.log(`Listening on port ${PORT}!`);
 });
 
 app.post("/addStudent", (req, res) => {
@@ -48,6 +50,6 @@ app.get("/getStudent/:rollNo", (req, res) => {
 	const getQuery = "SELECT * FROM student WHERE roll_no=? LIMIT 1;";
 	connection.query(getQuery, [req.params.rollNo], (err, rows, fields) => {
 		if (err) console.log(err);
-		else res.json(rows);
+		else res.json(rows[0]);
 	});
 });
