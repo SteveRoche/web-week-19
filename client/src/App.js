@@ -84,8 +84,8 @@ class Searchbar extends Component {
   onSubmit = () => {
     fetch(`/getStudent/${this.state.search}`)
       .then(res => res.json())
-	  .then(data => this.props.searchCallback(data));
-	  .catch(err => console.log(err));
+      .then(data => this.props.searchCallback(data))
+      .catch(err => console.log(err));
   };
 
   render() {
