@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 
 const PORT = 3001;
 
-var connection = mysql.createConnection({
+const connection = mysql.createConnection({
 	host: "localhost",
 	user: "codeportaluser",
 	password: "code",
@@ -50,6 +50,6 @@ app.get("/getStudent/:rollNo", (req, res) => {
 	const getQuery = "SELECT * FROM student WHERE roll_no=? LIMIT 1;";
 	connection.query(getQuery, [req.params.rollNo], (err, rows, fields) => {
 		if (err) console.log(err);
-		else res.json(rows[0]);
+		else res.json(rows[0] || {});
 	});
 });
