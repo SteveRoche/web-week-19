@@ -10,7 +10,9 @@ class Navbar extends Component {
 		return (
 			<div className="nav-bg">
 				<img className="logo" src={logo} alt="Manipal Logo" />
-				<NavItems />
+				<NavItems>
+					<span className="NavItem">Academics</span>
+				</NavItems>
 			</div>
 		);
 	}
