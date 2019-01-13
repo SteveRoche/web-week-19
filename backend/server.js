@@ -9,8 +9,8 @@ const PORT = 3001;
 
 const connection = mysql.createConnection({
 	host: "localhost",
-	user: "codeportaluser",
-	password: "code",
+	user: "root",
+	password: "root",
 	database: "web_week_2019"
 });
 

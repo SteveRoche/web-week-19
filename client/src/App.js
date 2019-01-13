@@ -30,15 +30,11 @@ const NavItem = ({ children, selected }) => (
 );
 
 class Content extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: []
-    };
-  }
+  state = {
+    data: []
+  };
 
   onSearch = data => {
-    console.log(data);
     this.setState({
       data: Object.keys(data)
         .filter(key => key !== 'id')
@@ -70,12 +66,9 @@ const Header = ({ searchCallback }) => (
 );
 
 class Searchbar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      search: ''
-    };
-  }
+  state = {
+    search: ''
+  };
 
   onChange = e => {
     this.setState({ search: e.target.value });
